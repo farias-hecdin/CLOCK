@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <Button
+            android:textSize="36.0sp"
+            android:id="@id/snooze_minus_five"
+            android:background="@drawable/rect_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/minus_five"
+            android:layout_weight="1.0"
+            android:elevation="6.0dip" />
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/snooze"
+                style="@android:style/TextAppearance.Large" />
+            <TextView
+                android:layout_gravity="center"
+                android:id="@id/snooze_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/TextAppearance.Large" />
+        </LinearLayout>
+        <Button
+            android:textSize="36.0sp"
+            android:id="@id/snooze_plus_five"
+            android:background="@drawable/rect_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/plus_five"
+            android:layout_weight="1.0"
+            android:elevation="6.0dip" />
+    </LinearLayout>
+    <TextClock
+        android:textSize="84.0sp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true" />
+    <Button
+        android:textSize="36.0sp"
+        android:id="@id/snooze_alarm"
+        android:background="@drawable/rect_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/snooze"
+        android:layout_weight="1.0"
+        android:elevation="6.0dip" />
+    <TextView
+        android:textSize="36.0sp"
+        android:id="@id/alarm_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" />
+    <com.angrydoughnuts.android.alarmclock.Slider
+        android:id="@id/dismiss_alarm"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

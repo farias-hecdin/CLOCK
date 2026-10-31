@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/timer_setup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <NumberPicker
+                    android:id="@id/timer_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hours_abbr"
+                    style="@android:style/TextAppearance.Medium" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <NumberPicker
+                    android:id="@id/timer_minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minutes_lbl"
+                    style="@android:style/TextAppearance.Medium" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <NumberPicker
+                    android:id="@id/timer_seconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/seconds_abbr"
+                    style="@android:style/TextAppearance.Medium" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:textSize="36.0sp"
+            android:id="@id/start_timer"
+            android:background="@drawable/rect_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24.0dip"
+            android:text="@string/start"
+            android:elevation="6.0dip" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@id/timer_running_view"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+        <TextView
+            android:textSize="72.0sp"
+            android:gravity="center"
+            android:id="@id/timer_countdown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:fontFamily="sans-serif-thin"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="28.0sp"
+            android:autoSizeMaxTextSize="72.0sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timer_running"
+            style="@android:style/TextAppearance.Large" />
+        <Button
+            android:textSize="36.0sp"
+            android:id="@id/cancel_timer"
+            android:background="@drawable/rect_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24.0dip"
+            android:text="@string/cancel"
+            android:elevation="6.0dip" />
+    </LinearLayout>
+</LinearLayout>
