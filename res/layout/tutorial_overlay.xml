@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@id/tutorial_overlay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textSize="25.0sp"
+        android:textColor="#ffffffff"
+        android:id="@id/textTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="16.0dip" />
+    <TextView
+        android:textAppearance="?android:textAppearance"
+        android:textSize="19.0sp"
+        android:textColor="#ffffffff"
+        android:id="@id/textSubtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:layout_alignLeft="@id/textTitle"
+        android:layout_alignRight="@id/textTitle"
+        android:layout_alignStart="@id/textTitle"
+        android:layout_alignEnd="@id/textTitle" />
+    <RelativeLayout
+        android:id="@id/start_container"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="80.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:layout_alignParentBottom="true">
+        <ImageButton
+            android:id="@id/btn_start"
+            android:background="@drawable/btn_transparent"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginRight="22.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="22.0dip"
+            android:layout_alignParentEnd="true" />
+        <Button
+            android:textSize="15.0sp"
+            android:textColor="#ffffffff"
+            android:gravity="center"
+            android:id="@id/btn_start_skip"
+            android:background="@drawable/btn_transparent"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="22.0dip"
+            android:text="@string/skip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="22.0dip"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@id/bottom_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:textSize="15.0sp"
+            android:textColor="#ffffffff"
+            android:id="@id/btn_skip"
+            android:background="@drawable/btn_transparent"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/skip"
+            android:layout_weight="1.0" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:id="@id/indicator"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+        <ImageButton
+            android:textColor="#ffffffff"
+            android:id="@id/btn_next"
+            android:background="@drawable/btn_transparent"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        android:background="#88ffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_above="@id/bottom_bar" />
+</RelativeLayout>

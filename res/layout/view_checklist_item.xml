@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.socialnmobile.colornote.view.NoChildFocusRelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false">
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+            <TextView
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="#ff000000"
+                android:gravity="center_vertical"
+                android:id="@id/text"
+                android:paddingLeft="8.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@id/item_moreoverflow1"
+                android:background="@drawable/btn_transparent_borderless"
+                android:paddingLeft="30.0dip"
+                android:paddingRight="8.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <View
+            android:id="@id/sep"
+            android:layout_width="1.0px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="6.0dip"
+            android:layout_marginBottom="6.0dip" />
+        <ImageButton
+            android:gravity="center"
+            android:id="@id/image"
+            android:background="@drawable/btn_transparent"
+            android:layout_width="56.0dip"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@id/item_moreoverflow2"
+        android:background="@drawable/btn_transparent_borderless"
+        android:paddingLeft="28.0dip"
+        android:paddingRight="8.0dip"
+        android:layout_width="wrap_content"
+        android:layout_height="40.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</com.socialnmobile.colornote.view.NoChildFocusRelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.socialnmobile.colornote.view.ScreenGridList
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:hapticFeedbackEnabled="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView
+        android:id="@id/note_list"
+        android:paddingLeft="@dimen/gridlist_spacing"
+        android:paddingTop="@dimen/gridlist_spacing"
+        android:paddingRight="@dimen/gridlist_spacing"
+        android:paddingBottom="@dimen/gridlist_spacing"
+        android:layoutAnimation="@anim/layout_animation_row_left_slide"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@drawable/note_list_selector"
+        android:drawSelectorOnTop="true"
+        android:divider="@drawable/divider_notelist"
+        android:overScrollFooter="@null" />
+    <GridView
+        android:id="@id/note_grid"
+        android:paddingLeft="@dimen/gridlist_spacing"
+        android:paddingTop="@dimen/gridlist_spacing"
+        android:paddingBottom="@dimen/gridlist_spacing"
+        android:visibility="invisible"
+        android:layoutAnimation="@anim/layout_animation_grid_left_slide"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:listSelector="@drawable/note_list_selector"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="@dimen/gridlist_spacing"
+        android:verticalSpacing="@dimen/gridlist_spacing"
+        android:stretchMode="none"
+        android:columnWidth="100.0dip"
+        android:numColumns="auto_fit" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@id/empty"
+        android:background="@drawable/btn_transparent_borderless"
+        android:padding="5.0dip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@id/img_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_list_icon" />
+        <TextView
+            android:textSize="24.0sp"
+            android:textStyle="bold"
+            android:textColor="#ff7a7a7a"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@id/empty_text"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_add_note" />
+    </LinearLayout>
+</com.socialnmobile.colornote.view.ScreenGridList>

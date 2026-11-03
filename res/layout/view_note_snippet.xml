@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.socialnmobile.colornote.view.NoChildFocusRelativeLayout
+    android:background="@drawable/bg_note_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:id="@id/color"
+        android:layout_width="@dimen/listLineWidth"
+        android:layout_height="@dimen/snippet_item_height"
+        android:layout_alignParentLeft="true" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/snippet_item_height"
+        android:layout_toRightOf="@id/color">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/title_line"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.0dip">
+            <TextView
+                android:textSize="@dimen/snippet_title_text_size"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:id="@id/title"
+                android:paddingRight="2.0dip"
+                android:fadingEdge="horizontal"
+                android:layout_width="0.0dip"
+                android:layout_height="24.0dip"
+                android:layout_marginLeft="4.0dip"
+                android:singleLine="true"
+                android:drawablePadding="4.0dip"
+                android:layout_weight="1.0" />
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@id/repeat_image"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:scaleType="center" />
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@id/type_image"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:scaleType="center" />
+        </LinearLayout>
+        <TextView
+            android:textSize="@dimen/snippet_content_text_size"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:id="@id/content"
+            android:paddingRight="2.0dip"
+            android:fadingEdge="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginTop="2.0dip"
+            android:maxLines="2"
+            android:lines="2"
+            android:drawablePadding="4.0dip"
+            android:layout_toRightOf="@id/color" />
+        <TextView
+            android:textSize="@dimen/note_snippet_item_date_text_size"
+            android:textColor="#ff777777"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:id="@id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginTop="2.0dip"
+            android:layout_marginRight="2.0dip" />
+    </LinearLayout>
+</com.socialnmobile.colornote.view.NoChildFocusRelativeLayout>

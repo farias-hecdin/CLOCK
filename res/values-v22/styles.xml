@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Material.AlertDialog.Dark" parent="@style/Base.v21.Material.Dialog.Alert.Dark" />
+    <style name="Material.AlertDialog.Light" parent="@style/Base.v21.Material.Dialog.Alert.Light" />
+</resources>

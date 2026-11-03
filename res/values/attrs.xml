@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="popupMenuStyle" format="reference" />
+    <attr name="dropDownListViewStyle" format="reference" />
+    <attr name="accentColor" format="color" />
+    <attr name="customDialogTabDeviderHeight" format="dimension" />
+    <attr name="customDialogButtonDeviderHeight" format="dimension" />
+    <attr name="customDialogButtonTextColor" format="color" />
+    <attr name="normalTextColor" format="color" />
+    <attr name="dialogListTextColor" format="color" />
+    <attr name="dialogContentStyle" format="reference" />
+    <attr name="dialogContentStyleLess" format="reference" />
+    <attr name="dialogListItemPadding" format="dimension" />
+    <attr name="dialogNoButtonContentStyle" format="reference" />
+    <attr name="dialogNoButtonContentStyleLess" format="reference" />
+    <attr name="isLight" format="boolean" />
+</resources>

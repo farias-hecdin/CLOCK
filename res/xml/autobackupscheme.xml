@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include
+        domain="database"
+        path="colornote.db" />
+    <include
+        domain="sharedpref"
+        path="SEARCH_HISTORY.xml" />
+    <include
+        domain="sharedpref"
+        path="com.socialnmobile.dictapps.notepad.color.note_preferences.xml" />
+</full-backup-content>

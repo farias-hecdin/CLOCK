@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@id/content_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include
+            android:id="@id/top_bar"
+            layout="@layout/include_top_bar" />
+        <com.socialnmobile.colornote.view.MyViewPager
+            android:id="@id/viewpager"
+            android:background="#ffe0e0e0"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/top_bar" />
+        <FrameLayout
+            android:id="@id/subFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/top_bar" />
+        <View
+            android:background="@drawable/topbar_shadow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top_bar" />
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:id="@id/sync_msg_container"
+            android:background="@drawable/bg_sync_msg"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:layout_alignParentBottom="true">
+            <ProgressBar
+                android:id="@id/sync_progress"
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:indeterminate="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+            <ImageView
+                android:id="@id/sync_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:src="@drawable/title_error"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:textColor="#ee000000"
+                android:gravity="center"
+                android:id="@id/msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="46.0dip" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_gravity="bottom"
+            android:id="@id/updateAvailable"
+            android:paddingBottom="7.0dip"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/bg_update_available"
+                android:padding="10.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7.0dip"
+                android:layout_marginTop="7.0dip"
+                android:layout_marginRight="7.0dip">
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textColor="#ff000000"
+                    android:gravity="center"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="@string/msg_update_available"
+                    android:layout_weight="1.0" />
+                <TextView
+                    android:textSize="18.0sp"
+                    android:textColor="#ffffffff"
+                    android:layout_gravity="center"
+                    android:id="@id/update"
+                    android:background="@drawable/btn_update"
+                    android:paddingLeft="16.0dip"
+                    android:paddingTop="8.0dip"
+                    android:paddingRight="16.0dip"
+                    android:paddingBottom="8.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/update" />
+            </LinearLayout>
+            <ImageButton
+                android:id="@id/close_update"
+                android:background="@drawable/btn_transparent_plat_light"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        android:id="@id/left_drawer"
+        android:visibility="invisible"
+        android:layout_width="@dimen/side_menu_width"
+        android:layout_height="fill_parent">
+        <FrameLayout
+            android:id="@id/sideFragment"
+            android:background="#ffffffff"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

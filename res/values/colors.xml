@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="alarm_klock_bg">#ff1d539d</color>
+    <color name="accent_dark">#ff80cbc4</color>
+    <color name="accent_light">#ff009688</color>
+    <color name="btn_focused">#4c33b5e5</color>
+    <color name="btn_focused_border">#9933b5e5</color>
+    <color name="btn_long_pressed_dark">#50ffffff</color>
+    <color name="btn_long_pressed_light">#50000000</color>
+    <color name="btn_pressed_dark">#30ffffff</color>
+    <color name="btn_pressed_light">#30000000</color>
+    <color name="btn_selected_border">#cc0099cc</color>
+    <color name="control_highlight_dark">#50ffffff</color>
+    <color name="control_highlight_light">#50000000</color>
+    <color name="highlight_button_text_dark">#ff80cbc4</color>
+    <color name="option_devider">#00000000</color>
+    <color name="accent_dark_holo">#ff0099cc</color>
+    <color name="accent_light_holo">#ff33b5e5</color>
+    <color name="btn_transparent_normal">#00000000</color>
+    <color name="dragndrop_background">#e060e060</color>
+    <color name="dropplace_background">#6060e060</color>
+    <color name="edit_title_transparent">#00000000</color>
+    <color name="transparent">#00000000</color>
 </resources>

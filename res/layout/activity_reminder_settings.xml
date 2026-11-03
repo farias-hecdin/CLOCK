@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@id/scroll_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/event"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/overdue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                android:textColor="#ffffffff"
+                android:gravity="center"
+                android:background="#ff888888"
+                android:paddingLeft="2.0dip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/overdue" />
+            <Button
+                android:textSize="@dimen/buttonTextSizeMedium"
+                android:textStyle="bold"
+                android:textColor="@color/highlight_button_text_dark"
+                android:id="@id/reset"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginRight="7.0dip"
+                android:text="@string/reset" />
+        </LinearLayout>
+        <Button
+            android:textSize="@dimen/buttonTextSizeLarge"
+            android:textStyle="bold"
+            android:textColor="@color/highlight_button_text_dark"
+            android:id="@id/dismiss"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="7.0dip"
+            android:text="@string/dismiss" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/type_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditEvent_Layout">
+            <TextView
+                android:id="@id/type_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                style="@style/TextAppearance.EditEvent_Label" />
+            <Spinner
+                android:id="@id/reminder_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/type" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/when_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditEvent_Layout">
+            <TextView
+                android:id="@id/when_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/when"
+                style="@style/TextAppearance.EditEvent_Label" />
+            <Button
+                android:textSize="@dimen/buttonTextSizeMedium"
+                android:gravity="center|left"
+                android:id="@id/relative_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:textSize="@dimen/buttonTextSizeMedium"
+                    android:gravity="center|left"
+                    android:id="@id/reminder_date"
+                    android:layout_width="0.0px"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="2.0dip"
+                    android:layout_weight="7.0" />
+                <Button
+                    android:textSize="@dimen/buttonTextSizeMedium"
+                    android:gravity="center|left"
+                    android:id="@id/reminder_time"
+                    android:layout_width="0.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/repetition_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditEvent_Layout">
+            <TextView
+                android:id="@id/repetition_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repetition"
+                android:drawablePadding="4.0dip"
+                style="@style/TextAppearance.EditEvent_Label" />
+            <Spinner
+                android:id="@id/repeat_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/repetition" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/ends_container"
+            android:paddingTop="0.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditEvent_Layout">
+            <TextView
+                android:id="@id/until_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repetition_ends"
+                style="@style/TextAppearance.EditEvent_Label" />
+            <Button
+                android:textSize="@dimen/buttonTextSizeMedium"
+                android:gravity="center|left"
+                android:id="@id/reminder_ends"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2.0dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@id/quick_settings_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/EditEvent_Layout">
+            <TextView
+                android:id="@id/quick_settings_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quick_settings"
+                style="@style/TextAppearance.EditEvent_Label" />
+            <Button
+                android:textSize="@dimen/buttonTextSizeMedium"
+                android:gravity="center|left"
+                android:id="@id/quick_setting_status_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/pin_to_status_bar"
+                android:drawablePadding="4.0dip" />
+            <Button
+                android:textSize="@dimen/buttonTextSizeMedium"
+                android:gravity="center|left"
+                android:id="@id/quick_setting_today"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/remindme_today"
+                android:drawablePadding="4.0dip" />
+            <Button
+                android:textSize="@dimen/buttonTextSizeMedium"
+                android:gravity="center|left"
+                android:id="@id/quick_setting_15min"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/remindme_in15min"
+                android:drawablePadding="4.0dip" />
+            <Button
+                android:textSize="@dimen/buttonTextSizeMedium"
+                android:gravity="center|left"
+                android:id="@id/quick_setting_30min"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:text="@string/remindme_in30min"
+                android:drawablePadding="4.0dip" />
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+        <include
+            layout="@layout/include_dialog_button_bar" />
+    </LinearLayout>
+</ScrollView>

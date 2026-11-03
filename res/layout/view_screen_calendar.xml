@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.socialnmobile.colornote.view.ScreenCalendar
+    android:id="@id/screen_calendar"
+    android:background="#ffe0e0e0"
+    android:padding="@dimen/gridlist_spacing"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:hapticFeedbackEnabled="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/month_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <com.socialnmobile.colornote.view.MonthView
+            android:id="@id/month_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="bottom|center|right"
+        android:id="@id/btn_calendar_overview"
+        android:background="@drawable/bg_overview_fab"
+        android:layout_width="46.0dip"
+        android:layout_height="46.0dip"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:src="@drawable/ic_overview_notes"
+        android:scaleType="center"
+        android:contentDescription="@string/calendar_overview_title"
+        android:elevation="6.0dip" />
+</com.socialnmobile.colornote.view.ScreenCalendar>

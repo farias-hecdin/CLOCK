@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable
+    android:label="@string/app_name"
+    android:searchSuggestAuthority="note.socialnmobile.provider.colornote"
+    android:searchSuggestIntentAction="android.intent.action.VIEW"
+    android:voiceSearchMode="launchRecognizer|showVoiceSearchButton"
+    android:voiceLanguageModel="free_form"
+    android:includeInGlobalSearch="true"
+    android:searchSettingsDescription="@string/app_desc"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

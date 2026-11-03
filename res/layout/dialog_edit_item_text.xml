@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    style="?dialogContentStyleLess"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.socialnmobile.colornote.view.DeviceThemeEditText
+        android:gravity="top"
+        android:layout_gravity="center_vertical"
+        android:id="@id/edit"
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:maxLength="300"
+        android:inputType="textCapSentences|textMultiLine" />
+</LinearLayout>

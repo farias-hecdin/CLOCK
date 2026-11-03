@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@android:id/background"
+    android:background="@drawable/bg_widget"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="@dimen/widget_2x2_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:id="@id/title_container"
+        android:layout_width="fill_parent"
+        android:layout_height="28.0dip">
+        <ImageView
+            android:id="@id/bg_image1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+        <TextView
+            android:textSize="@dimen/widget_title_text_size"
+            android:textColor="#ff000000"
+            android:ellipsize="none"
+            android:gravity="center_vertical"
+            android:id="@android:id/title"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="28.0dip"
+            android:fadingEdge="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:singleLine="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@id/note_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_container">
+        <ImageView
+            android:id="@id/bg_image2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY" />
+        <TextView
+            android:textSize="@dimen/widget_content_text_size"
+            android:textColor="#ff000000"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:id="@android:id/text1"
+            android:padding="3.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+        <ImageView
+            android:id="@id/lock_image"
+            android:visibility="invisible"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:src="@drawable/title_lock"
+            android:scaleType="center"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@android:id/button1"
+        android:paddingBottom="20.0dip"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:background="@drawable/bg_widget_select"
+            android:paddingRight="2.0dip"
+            android:duplicateParentState="true"
+            android:layout_width="30.0dip"
+            android:layout_height="28.0dip"
+            android:src="@drawable/ic_widget_select"
+            android:scaleType="fitEnd"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="notes_reminder_count">
+        <item quantity="other">Notas para hoy %d</item>
+        <item quantity="one">1 nota para hoy</item>
+        <item quantity="two">Notas para hoy %d</item>
+        <item quantity="few">Notas para hoy %d</item>
+        <item quantity="many">Notas para hoy %d</item>
+    </plurals>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.socialnmobile.colornote.view.NotesOptions
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/options_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip">
+        <TextView
+            android:textSize="19.0sp"
+            android:textColor="?android:textColorPrimary"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:id="@id/title0"
+            android:fadingEdge="horizontal"
+            android:duplicateParentState="true"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/menu_color"
+            android:singleLine="true"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="19.0sp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:id="@id/title1"
+            android:fadingEdge="horizontal"
+            android:duplicateParentState="true"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/sort"
+            android:singleLine="true"
+            android:layout_weight="1.0" />
+        <TextView
+            android:textSize="19.0sp"
+            android:textColor="?android:textColorPrimary"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:id="@id/title2"
+            android:fadingEdge="horizontal"
+            android:duplicateParentState="true"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:text="@string/menu_view"
+            android:singleLine="true"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@id/selected_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="4.0dip"
+        android:layout_alignBottom="@id/options_tab">
+        <View
+            android:id="@id/tab0"
+            android:background="?accentColor"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+        <View
+            android:id="@id/tab1"
+            android:background="?accentColor"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+        <View
+            android:id="@id/tab2"
+            android:background="?accentColor"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+    <View
+        android:id="@id/divider"
+        android:background="?accentColor"
+        android:layout_width="fill_parent"
+        android:layout_height="?customDialogTabDeviderHeight"
+        android:layout_below="@id/selected_tab" />
+    <com.socialnmobile.colornote.view.MyViewPager
+        android:id="@id/viewpager"
+        android:background="#00101010"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dialog_option_height"
+        android:layout_below="@id/divider" />
+</com.socialnmobile.colornote.view.NotesOptions>

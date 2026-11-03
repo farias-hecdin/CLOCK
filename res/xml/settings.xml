@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="@string/pref_general_settings">
+        <ListPreference
+            android:entries="@array/default_screen_entries"
+            android:title="@string/pref_default_screen"
+            android:key="pref_default_screen"
+            android:defaultValue="@string/config_default_screen"
+            android:entryValues="@array/default_screen_values" />
+        <com.socialnmobile.colornote.view.ColorPreference
+            android:title="@string/pref_default_color"
+            android:key="pref_default_color"
+            android:widgetLayout="@layout/preference_widget_color" />
+        <ListPreference
+            android:entries="@array/default_font_size_entries"
+            android:title="@string/pref_default_font_size"
+            android:key="pref_default_font_size"
+            android:defaultValue="@string/config_default_font_size"
+            android:entryValues="@array/default_font_size_values" />
+        <ListPreference
+            android:entries="@array/default_font_size_entries"
+            android:title="@string/pref_default_note_title_font_size"
+            android:key="pref_default_note_title_font_size"
+            android:defaultValue="@string/config_default_font_size"
+            android:entryValues="@array/default_font_size_values" />
+        <ListPreference
+            android:entries="@array/default_list_item_height_entries"
+            android:title="@string/pref_list_item_height"
+            android:key="pref_list_item_height"
+            android:defaultValue="@string/config_default_list_item_height"
+            android:entryValues="@array/default_list_item_height_values" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_sort_settings">
+        <ListPreference
+            android:entries="@array/default_sort_option_entries"
+            android:title="@string/pref_default_sort_option"
+            android:key="pref_default_sort_option"
+            android:defaultValue="@string/config_default_sort_option"
+            android:entryValues="@array/default_sort_option_values" />
+        <ListPreference
+            android:entries="@array/default_sort_in_color_entries"
+            android:title="@string/pref_sort_order_in_color"
+            android:key="pref_sort_order_in_color"
+            android:defaultValue="@string/config_sort_order_in_color"
+            android:entryValues="@array/default_sort_in_color_values" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_reminder_settings">
+        <CheckBoxPreference
+            android:title="@string/pref_show_item_count_on_widget"
+            android:key="pref_show_item_count_on_widget"
+            android:defaultValue="@bool/config_show_item_count_on_widget" />
+        <CheckBoxPreference
+            android:title="@string/pref_show_all_day_reminder"
+            android:key="pref_show_all_day_reminder"
+            android:defaultValue="@bool/config_show_all_day_reminder" />
+        <ListPreference
+            android:entries="@array/widget_transparency_entries"
+            android:title="@string/pref_widget_transparency"
+            android:key="pref_widget_transparency"
+            android:defaultValue="@string/config_widget_transparency"
+            android:entryValues="@array/widget_transparency_values" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/calendar">
+        <ListPreference
+            android:entries="@array/first_day_of_week_entries"
+            android:title="@string/pref_first_day_of_week"
+            android:key="pref_first_day_of_week"
+            android:entryValues="@array/first_day_of_week_values" />
+        <ListPreference
+            android:entries="@array/lunar_calendar_entries"
+            android:title="@string/pref_show_lunar_date"
+            android:key="pref_show_lunar_date_str"
+            android:entryValues="@array/lunar_calendar_values" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_editor_settings">
+        <PreferenceScreen
+            android:title="@string/pref_text_editor_settings"
+            android:widgetLayout="@layout/preference_widget_icon">
+            <PreferenceCategory
+                android:title="@string/pref_text_editor_settings">
+                <CheckBoxPreference
+                    android:title="@string/pref_use_auto_select"
+                    android:key="pref_use_auto_select"
+                    android:summary="@string/pref_use_auto_select_summary"
+                    android:defaultValue="@bool/config_use_auto_select" />
+                <CheckBoxPreference
+                    android:title="@string/pref_edit_title"
+                    android:key="pref_edit_title"
+                    android:defaultValue="@bool/config_edit_title" />
+                <CheckBoxPreference
+                    android:title="@string/pref_use_colordict"
+                    android:key="pref_use_colordict_in_editor"
+                    android:defaultValue="@bool/config_use_colordict" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="@string/pref_checklist_editor_settings"
+            android:widgetLayout="@layout/preference_widget_icon">
+            <CheckBoxPreference
+                android:title="@string/pref_list_item_drag"
+                android:key="pref_list_item_drag"
+                android:defaultValue="@bool/config_list_item_drag" />
+            <CheckBoxPreference
+                android:title="@string/auto_sort_by_status"
+                android:key="pref_auto_sort_by_status"
+                android:defaultValue="@bool/config_auto_sort_by_status" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="@string/pref_autolink"
+            android:widgetLayout="@layout/preference_widget_icon">
+            <PreferenceCategory
+                android:title="@string/pref_autolink">
+                <CheckBoxPreference
+                    android:title="@string/pref_autolink"
+                    android:key="pref_use_autolink"
+                    android:defaultValue="@bool/config_use_autolink" />
+                <ListPreference
+                    android:entries="@array/autolink_phone_type_entries"
+                    android:title="@string/pref_autolink_phone_number"
+                    android:key="pref_autolink_phone_type"
+                    android:dependency="pref_use_autolink"
+                    android:defaultValue="@string/config_autolink_phone_type"
+                    android:entryValues="@array/autolink_phone_type_values" />
+            </PreferenceCategory>
+            <PreferenceCategory
+                android:title="@string/pref_wiki_settings">
+                <CheckBoxPreference
+                    android:title="@string/pref_use_note_link"
+                    android:key="pref_use_note_link"
+                    android:summary="@string/pref_use_note_link_summary"
+                    android:defaultValue="@bool/config_use_note_link" />
+                <CheckBoxPreference
+                    android:title="@string/pref_autolink_wiki_word"
+                    android:key="pref_autolink_wiki_word"
+                    android:dependency="pref_use_note_link"
+                    android:defaultValue="@bool/config_autolink_wiki_word" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_more_settings">
+        <PreferenceScreen
+            android:title="@string/pref_more_settings"
+            android:widgetLayout="@layout/preference_widget_icon">
+            <PreferenceCategory
+                android:title="@string/pref_more_settings">
+                <ListPreference
+                    android:entries="@array/pref_base_style_entries"
+                    android:title="@string/pref_base_style"
+                    android:key="pref_base_style"
+                    android:defaultValue="@string/config_base_style"
+                    android:entryValues="@array/pref_base_style_values" />
+                <CheckBoxPreference
+                    android:title="@string/pref_gpu_rendering"
+                    android:key="pref_gpu_rendering"
+                    android:defaultValue="@bool/config_gpu_rendering" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/pref_security_settings">
+        <PreferenceScreen
+            android:title="@string/master_password"
+            android:summary="@string/master_password_summary"
+            android:widgetLayout="@layout/preference_widget_icon">
+            <intent
+                android:action="note.socialnmobile.intent.action.CHANGE_MASTER_PASSWORD" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/backup">
+        <PreferenceScreen
+            android:title="@string/backup"
+            android:key="pref_sdcard_backup"
+            android:widgetLayout="@layout/preference_widget_icon">
+            <intent
+                android:action="note.socialnmobile.intent.action.SDCARD_BACKUP" />
+        </PreferenceScreen>
+        <CheckBoxPreference
+            android:title="@string/pref_enable_auto_backup"
+            android:key="pref_enable_auto_backup"
+            android:defaultValue="@bool/config_enable_auto_backup" />
+        <CheckBoxPreference
+            android:title="@string/pref_secured_auto_backup"
+            android:key="pref_secured_auto_backup"
+            android:summary="@string/pref_secured_auto_backup_summary"
+            android:dependency="pref_enable_auto_backup"
+            android:defaultValue="@bool/config_secured_auto_backup" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="@string/about">
+        <com.socialnmobile.colornote.view.MyIntentPreference
+            android:title="@string/colornote_faq"
+            android:key="pref_faq"
+            android:widgetLayout="@layout/preference_widget_icon" />
+        <PreferenceScreen
+            android:title="@string/about"
+            android:widgetLayout="@layout/preference_widget_icon">
+            <com.socialnmobile.colornote.view.MyIntentPreference
+                android:title="@string/privacy_policy"
+                android:key="pref_privacy"
+                android:widgetLayout="@layout/preference_widget_icon" />
+            <com.socialnmobile.colornote.view.MyIntentPreference
+                android:title="@string/facebook"
+                android:key="pref_facebook"
+                android:widgetLayout="@layout/preference_widget_icon" />
+            <com.socialnmobile.colornote.view.MyIntentPreference
+                android:title="@string/translation"
+                android:key="pref_trans"
+                android:summary="@string/pref_translation_summary"
+                android:widgetLayout="@layout/preference_widget_icon" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

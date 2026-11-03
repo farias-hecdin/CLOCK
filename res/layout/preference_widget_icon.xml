@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    android:id="@id/icon"
+    android:focusable="false"
+    android:clickable="false"
+    android:layout_width="@dimen/pref_widget_size"
+    android:layout_height="@dimen/pref_widget_size"
+    android:scaleType="center"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

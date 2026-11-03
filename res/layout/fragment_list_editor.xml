@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:id="@id/root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@id/scrollLinear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <include
+            android:id="@id/title_bar"
+            layout="@layout/include_editor_title" />
+        <include
+            android:id="@id/conflict"
+            android:visibility="gone"
+            layout="@layout/include_editor_conflict" />
+        <include
+            android:id="@id/datetime_info"
+            layout="@layout/include_editor_datetime" />
+        <ListView
+            android:id="@id/viewlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@drawable/normal_list_selector"
+            android:overScrollFooter="@null" />
+        <com.socialnmobile.colornote.view.DragDropListView
+            android:id="@id/editlist"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@drawable/normal_list_selector"
+            android:overScrollFooter="@null" />
+        <TextView
+            android:textSize="24.0sp"
+            android:gravity="center"
+            android:id="@id/text"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    <TextView
+        android:textSize="36.0sp"
+        android:textColor="#ff000000"
+        android:gravity="center"
+        android:id="@id/deleted"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/deleted" />
+</RelativeLayout>

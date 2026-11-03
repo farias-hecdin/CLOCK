@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@id/title_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip">
+            <ImageButton
+                android:id="@id/prev"
+                android:background="@drawable/btn_transparent_borderless"
+                android:layout_width="60.0dip"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:textSize="20.0sp"
+                android:textColor="?android:textColorPrimary"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:id="@id/title"
+                android:fadingEdge="horizontal"
+                android:duplicateParentState="true"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:singleLine="true"
+                android:layout_weight="1.0" />
+            <ImageButton
+                android:id="@id/next"
+                android:background="@drawable/btn_transparent_borderless"
+                android:layout_width="60.0dip"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@id/list_container"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:minHeight="60.0dip"
+            android:layout_weight="1.0">
+            <ListView
+                android:id="@id/list"
+                android:paddingLeft="@dimen/gridlist_spacing"
+                android:paddingTop="@dimen/gridlist_spacing"
+                android:paddingRight="@dimen/gridlist_spacing"
+                android:paddingBottom="@dimen/gridlist_spacing"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:listSelector="@drawable/note_list_selector"
+                android:drawSelectorOnTop="true"
+                android:divider="@drawable/divider_notelist"
+                android:overScrollFooter="@null" />
+        </FrameLayout>
+        <View
+            android:background="#60888888"
+            android:layout_width="fill_parent"
+            android:layout_height="?customDialogButtonDeviderHeight" />
+        <TextView
+            android:textSize="18.0sp"
+            android:textColor="?customDialogButtonTextColor"
+            android:gravity="center"
+            android:id="@id/add"
+            android:background="@drawable/btn_transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:text="@string/add"
+            android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

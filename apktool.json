@@ -1,12 +1,13 @@
 {
-  "apkFileName": "Alarm_Klock_v2.14.1(29)_src.apk",
+  "apkFileName": "ColorNote_v3.11.16-fix4(5604)_src.apk",
   "PackageInfo": {
     "forcedPackageId": "127",
     "renameManifestPackage": null
   },
   "doNotCompress": [
-    "classes.dex",
     "resources.arsc",
+    "res/raw/ic_arrow_down.svg",
+    "res/raw/ic_arrow_up.svg",
     "png"
   ],
   "compressionType": false,
@@ -14,22 +15,19 @@
   "version": "2.4.0-261014",
   "sharedLibrary": false,
   "VersionInfo": {
-    "versionName": "2.14.1",
-    "versionCode": "29"
+    "versionName": "3.11.16-fix4",
+    "versionCode": "5604"
   },
   "UsesFramework": {
     "ids": [1],
     "tag": null
   },
-  "unknownFiles": {
-    "META-INF/version-control-info.textproto": "8",
-    "META-INF/com/android/build/gradle/app-metadata.properties": "8"
-  },
-  "apkFilePath": "/data/app/~~YxFvfPdyHKdxS1cerRZ5cA==/com.angrydoughnuts.android.alarmclock-ggnpnSdfhkyUMm6Gpxyarw==/base.apk",
+  "unknownFiles": {},
+  "apkFilePath": "/data/app/~~QzL1FttqAXrF1UHPeKTJpg==/com.socialnmobile.dictapps.notepad.color.note-rxvMd0WbIbGpZzEuq-NTXw==/base.apk",
   "compactEntries": false,
   "isFrameworkApk": false,
   "sdkInfo": {
-    "minSdkVersion": "33",
-    "targetSdkVersion": "36"
+    "minSdkVersion": "21",
+    "targetSdkVersion": "29"
   }
 }

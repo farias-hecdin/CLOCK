@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <View
+        android:background="#ff888888"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:id="@id/buttonPanel"
+        android:paddingTop="4.0dip"
+        android:paddingBottom="4.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="locale"
+        android:paddingStart="12.0dip"
+        android:paddingEnd="12.0dip"
+        style="?android:buttonBarStyle">
+        <Button
+            android:id="@id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            style="?android:buttonBarNeutralButtonStyle" />
+        <Space
+            android:id="@id/spacer"
+            android:visibility="invisible"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+        <Button
+            android:id="@id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            style="?android:buttonBarNegativeButtonStyle" />
+        <Button
+            android:id="@id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            style="?android:buttonBarPositiveButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:textAppearance="?android:textAppearanceLarge"
+    android:textColor="?normalTextColor"
+    android:ellipsize="end"
+    android:gravity="center_vertical"
+    android:id="@id/text"
+    android:paddingLeft="5.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/addnew_header_height"
+    android:text="@string/menu_add_note"
+    android:singleLine="true"
+    android:drawablePadding="5.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
